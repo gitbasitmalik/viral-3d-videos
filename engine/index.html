@@ -1,0 +1,30 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>whatif</title>
+<style>
+@font-face{font-family:Corm;src:url(node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:Corm;src:url(node_modules/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-500-italic.woff2);font-weight:500;font-style:italic}
+@font-face{font-family:Plex;src:url(node_modules/@fontsource/ibm-plex-mono/files/ibm-plex-mono-latin-400-normal.woff2);font-weight:400}
+@font-face{font-family:Plex;src:url(node_modules/@fontsource/ibm-plex-mono/files/ibm-plex-mono-latin-500-normal.woff2);font-weight:500}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#000}canvas{display:block}
+#shade{position:absolute;left:0;right:0;top:0;height:640px;background:linear-gradient(rgba(0,0,0,.32),rgba(0,0,0,0))}
+#hud{position:absolute;left:64px;top:205px;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.35)}
+#lab{font:500 23px Plex;letter-spacing:.2em;text-transform:uppercase;opacity:.92}
+#big{font:500 88px Corm;line-height:1;margin-top:4px}
+#sub{font:400 20px Plex;letter-spacing:.18em;text-transform:uppercase;opacity:.72;margin-top:10px}
+#handle,#endHandle{position:absolute;right:64px;top:330px;font:500 22px Plex;letter-spacing:.08em;color:#fff;opacity:.85;text-shadow:0 2px 10px rgba(0,0,0,.4)}
+#title{position:absolute;left:70px;right:70px;top:420px;text-align:center;color:#fff;font:500 78px/1.12 Corm;text-shadow:0 3px 22px rgba(0,0,0,.45)}
+#capbg{position:absolute;left:0;right:0;top:1130px;height:380px;opacity:0;background:radial-gradient(ellipse 60% 50% at 50% 50%,rgba(0,0,0,.85),rgba(0,0,0,0))}
+#cap{position:absolute;left:80px;right:80px;top:1240px;text-align:center;color:#fff;font:italic 500 60px/1.18 Corm;text-shadow:0 2px 6px rgba(0,0,0,.55),0 0 28px rgba(0,0,0,.75)}
+#end{position:absolute;inset:0;background:#111113;opacity:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff}
+#endTitle{font:500 78px/1.12 Corm;text-align:center;margin:0 70px}
+#endFact{font:400 19px/1.6 Plex;letter-spacing:.16em;text-transform:uppercase;opacity:.55;margin:34px 120px 0;text-align:center}
+.follow{font:500 28px Plex;letter-spacing:.2em;margin-top:44px}
+#btn{width:104px;height:104px;border-radius:50%;background:#e8265e;margin-top:46px;display:flex;align-items:center;justify-content:center;font:300 70px Plex;color:#fff}
+</style>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
+</head><body>
+<div id="shade" class="ov"></div>
+<div id="hud" class="ov"><div id="lab"></div><div id="big"></div><div id="sub"></div></div>
+<div id="handle" class="ov"></div><div id="title" class="ov"></div><div id="capbg" class="ov"></div><div id="cap" class="ov"></div>
+<div id="end" class="ov"><div id="endHandle"></div><div id="endTitle"></div><div id="endFact"></div>
+<div class="follow">FOLLOW FOR MORE WHAT IFS</div><div id="btn"><span id="btnIcon">+</span></div></div>
+<script type="module" src="main.js"></script></body></html>
