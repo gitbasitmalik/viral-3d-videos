@@ -2,7 +2,7 @@
 
 A Claude skill that turns a one-line **"what if…"** idea into a finished 60-second
 vertical 3D science reel — `1080×1920`, 30 fps, narrated, captioned, with sound
-effects — for the Instagram handle **@the.whatif.studio**.
+effects — for the Instagram
 
 ## What it does
 
